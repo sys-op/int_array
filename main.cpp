@@ -25,6 +25,14 @@ int main() {
     if (find_index >=0 ) {
         std::cout << "Найден " << find_value << ", индекс в массиве: " << find_index << "\n";
     }
+    find_value = 999;
+    find_index = a1.find(find_value);
+    if (find_index >=0 ) {
+        std::cout << "Найден " << find_value << ", индекс в массиве: " << find_index << "\n";
+    }
+    else {
+        std::cout << find_value << " не найден.\n";
+    }
 
     a1.resize(8);
     a1.push_front(100);
